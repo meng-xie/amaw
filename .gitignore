@@ -1,1 +1,3 @@
 .idea
+/adaptors/target/*
+/amaw-app/target/*

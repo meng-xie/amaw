@@ -4,7 +4,7 @@ package org.example.amaw.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user")
+@Table(name = "myuser")
 public class User {
     @Id
     @Column(name="userId", nullable = false, unique = true)

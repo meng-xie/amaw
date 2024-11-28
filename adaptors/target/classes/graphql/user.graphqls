@@ -1,0 +1,15 @@
+type Query {
+    findByUserId(userId: Int): [User]!
+}
+
+type User {
+    userId:Int!
+    userName:String!
+    address:String!
+    city:String!
+}
+
+# The Root Mutation for the User
+type Mutation {
+    createUser(userId:Int!,userName: String!, address: String!, city: String!) : User!
+}

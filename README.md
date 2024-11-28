@@ -1,4 +1,4 @@
-# 2 son model 
-- 1 adaptors include restful api and gql api
-- 2 amaw-app is main sprint boot project
-- 3 in amaw-app main/resource/application.properties set up db conection and port number all configs
+# 2 sub model 
+-  adaptors model include restful api and gql api
+-  amaw-app model is main sprint boot project
+-  in amaw-app model main/resource/application.properties include   db conection and port number all configs

@@ -7,14 +7,16 @@ import javax.persistence.*;
 @Table(name = "myuser")
 public class User {
     @Id
-    @Column(name="userId", nullable = false, unique = true)
-    private Integer userId;
-    @Column(name="userName")
+    @Column(name="userid", nullable = false, unique = true)
+    private String userId;
+    @Column(name="username")
     private String userName;
-    @Column(name="address")
-    private String address;
-    @Column(name="city")
-    private String city;
+    @Column(name="cellphone")
+    private String cellphone;
+    @Column(name="email")
+    private String email;
+    @Column(name="passwords")
+    private String passwords;
 
     public User(){
         super();
@@ -22,11 +24,11 @@ public class User {
 
     // getters, setters and constructor
 
-    public Integer getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+   public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -38,19 +40,27 @@ public class User {
         this.userName = userName;
     }
 
-    public String getAddress() {
-        return address;
+    public String getCellphone() {
+        return cellphone;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setCellphone(String cellphone) {
+        this.cellphone = cellphone;
     }
 
-    public String getCity() {
-        return city;
+    public String getEmail() {
+        return email;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPasswords() {
+        return passwords;
+    }
+
+    public void setPasswords(String passwords) {
+        this.passwords = passwords;
     }
 }

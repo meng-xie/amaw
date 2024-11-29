@@ -15,7 +15,8 @@ public interface UserRepository extends JpaRepository<User,Integer> {
      User  findByUserId(Integer userId);
 
     // Custom query
-    @Query("SELECT b FROM User b WHERE b.city = :city")
-    List<User> findByCity(@Param("city") String city);
+
+    @Query("SELECT b FROM User b WHERE b.userName = :username and b.passwords =:password")
+      User  login(@Param("username") String username,@Param("password") String password);
 
 }

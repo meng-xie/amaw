@@ -27,12 +27,12 @@ public class GqlController {
     }
 
     @MutationMapping
-    public User createUser(@Argument int userId, @Argument String userName, @Argument String address,  @Argument String city ) {
+    public User createUser(@Argument String userId, @Argument String userName, @Argument String address,  @Argument String city ) {
         User user = new User();
         user.setUserId(userId);
         user.setUserName(userName);
-        user.setAddress(address);
-        user.setCity(city);
+//        user.setAddress(address);
+//        user.setCity(city);
 
         userService.save(user);
 

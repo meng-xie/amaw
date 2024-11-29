@@ -16,13 +16,15 @@ CREATE DATABASE amawdb
 
 
 CREATE TABLE myuser (
-  userid int ,
+  userid VARCHAR(255) ,
   username VARCHAR(255),
-  address VARCHAR(255),
-    city VARCHAR(255)
+  cellphone int,
+    email VARCHAR(255) ,
+	passwords VARCHAR(255)
 
 );
 
 
-insert into myuser (userid,username,address,city) values(1,'firstuser','abc','mycity');
+
+insert into myuser (userid,username,cellphone,email,passwords) values('1','firstuser', '4082323233' ,'myxj128@gmail.com','123');
 commit;

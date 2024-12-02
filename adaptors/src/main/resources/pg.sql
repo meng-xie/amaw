@@ -18,12 +18,12 @@ CREATE DATABASE amawdb
 CREATE TABLE myuser (
   userid VARCHAR(255) ,
   username VARCHAR(255),
-  cellphone int,
+  cellphone VARCHAR,
     email VARCHAR(255) ,
-	passwords VARCHAR(255)
+	passwords VARCHAR(255),
+	verifycode VARCHAR(6)
 
 );
-
 
 
 insert into myuser (userid,username,cellphone,email,passwords) values('1','firstuser', '4082323233' ,'myxj128@gmail.com','123');

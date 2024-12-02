@@ -10,13 +10,15 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Integer> {
+public interface UserRepository extends JpaRepository<User, String> {
 
-     User  findByUserId(Integer userId);
+  User findByUserId(String userId);
 
-    // Custom query
+  // Custom query
+  @Query("SELECT b FROM User b WHERE b.userName = :username and b.passwords =:password")
+  User login(@Param("username") String username, @Param("password") String password);
 
-    @Query("SELECT b FROM User b WHERE b.userName = :username and b.passwords =:password")
-      User  login(@Param("username") String username,@Param("password") String password);
+  @Query("SELECT b FROM User b WHERE b.userName = :username and b.verifyCode =:verifyCode")
+  User forgotPassword(@Param("username") String username, @Param("verifyCode") String verifyCode);
 
 }

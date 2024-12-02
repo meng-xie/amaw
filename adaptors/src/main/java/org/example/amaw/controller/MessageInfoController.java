@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/amawservice/email")
 public class MessageInfoController {
-    MessageInfoService messageInfoService;
 
-    public MessageInfoController(MessageInfoService messageInfoService) {
-        this.messageInfoService = messageInfoService;
-    }
+  MessageInfoService messageInfoService;
+
+  public MessageInfoController(MessageInfoService messageInfoService) {
+    this.messageInfoService = messageInfoService;
+  }
 
 
-
-    @PostMapping(value = "/send", produces = MediaType.APPLICATION_JSON_VALUE,consumes =   MediaType.APPLICATION_JSON_VALUE)
-    public String sendEmail(@RequestBody MessageInfoDto message) {
-        messageInfoService.sendSimpleMessage(message);
-        return "success";
-    }
+  @PostMapping(value = "/send", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+  public String sendEmail(@RequestBody MessageInfoDto message) {
+    messageInfoService.sendSimpleMessage(message);
+    return "success";
+  }
 }

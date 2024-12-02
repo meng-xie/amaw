@@ -18,6 +18,9 @@ public class User {
     @Column(name="passwords")
     private String passwords;
 
+    @Column(name="verifycode")
+    private String verifyCode;
+
     public User(){
         super();
     }
@@ -62,5 +65,13 @@ public class User {
 
     public void setPasswords(String passwords) {
         this.passwords = passwords;
+    }
+
+    public String getVerifyCode() {
+        return verifyCode;
+    }
+
+    public void setVerifyCode(String verifyCode) {
+        this.verifyCode = verifyCode;
     }
 }

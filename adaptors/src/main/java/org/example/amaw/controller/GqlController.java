@@ -18,25 +18,26 @@ import java.util.List;
 @Controller
 public class GqlController {
 
-    @Autowired
-    UserService userService;
+  @Autowired
+  UserService userService;
 
-    @QueryMapping
-    public List<User> findByUserId(@Argument int userId) {
-        return Arrays.asList(userService.findByUserId(userId));
-    }
+  @QueryMapping
+  public List<User> findByUserId(@Argument String userId) {
+    return Arrays.asList(userService.findByUserId(userId));
+  }
 
-    @MutationMapping
-    public User createUser(@Argument String userId, @Argument String userName, @Argument String address,  @Argument String city ) {
-        User user = new User();
-        user.setUserId(userId);
-        user.setUserName(userName);
+  @MutationMapping
+  public User createUser(@Argument String userId, @Argument String userName,
+      @Argument String address, @Argument String city) {
+    User user = new User();
+    user.setUserId(userId);
+    user.setUserName(userName);
 //        user.setAddress(address);
 //        user.setCity(city);
 
-        userService.save(user);
+    userService.save(user);
 
-        return user;
-    }
+    return user;
+  }
 
 }

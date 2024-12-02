@@ -7,23 +7,22 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 
-
 @Service
 public class MessageInfoService {
 
-    @Autowired
-    private JavaMailSender emailSender;
+  @Autowired
+  private JavaMailSender emailSender;
 
-    public void sendSimpleMessage(MessageInfoDto messageInfoDto){
+  public void sendSimpleMessage(MessageInfoDto messageInfoDto) {
 
-        SimpleMailMessage message = new SimpleMailMessage();
+    SimpleMailMessage message = new SimpleMailMessage();
 
-        message.setTo(messageInfoDto.getEmail());
-        message.setSubject("hsfdsdf");
-        message.setText(messageInfoDto.getText());
-        emailSender.send(message);
+    message.setTo(messageInfoDto.getEmail());
+    message.setSubject("hsfdsdf");
+    message.setText(messageInfoDto.getText());
+    emailSender.send(message);
 
-    }
+  }
 
 
 }

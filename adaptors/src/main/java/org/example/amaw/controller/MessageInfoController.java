@@ -24,4 +24,11 @@ public class MessageInfoController {
     messageInfoService.sendSimpleMessage(message);
     return "success";
   }
+
+
+  @PostMapping(value = "/sendwithtemplate", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+  public String sendwithtemplate(@RequestBody MessageInfoDto message) {
+    messageInfoService.sendTemplateMessage(message);
+    return "success";
+  }
 }

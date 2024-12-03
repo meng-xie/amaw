@@ -1,8 +1,11 @@
 org/example/amaw/controller/UserController.class
+org/example/amaw/controller/MessageInfoController.class
 org/example/amaw/model/User.class
-org/example/amaw/repository/UserRepository.class
 org/example/amaw/service/UserService.class
+org/example/amaw/dto/MessageInfoDto.class
+org/example/amaw/service/MessageInfoService.class
 org/example/amaw/spark/Myspark.class
+org/example/amaw/dto/SignupuserRequestbody.class
+org/example/amaw/repository/UserRepository.class
 org/example/amaw/controller/GqlController.class
 org/example/amaw/spark/SparkSQLExample.class
-org/example/amaw/dto/SignupuserRequestbody.class

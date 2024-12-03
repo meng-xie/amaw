@@ -1,7 +1,10 @@
+/Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/controller/MessageInfoController.java
 /Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/controller/GqlController.java
 /Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/spark/SparkSQLExample.java
 /Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/spark/Myspark.java
+/Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/dto/MessageInfoDto.java
 /Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/dto/SignupuserRequestbody.java
+/Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/service/MessageInfoService.java
 /Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/controller/UserController.java
 /Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/model/User.java
 /Users/myxj128/meng-xie/work/amaw/adaptors/src/main/java/org/example/amaw/repository/UserRepository.java
